@@ -21,22 +21,19 @@
 # greetings("Andrew")
 
 
-def set_time
-    
-    if time == 0
-        puts "AM"
-    elsif time < 12
-        puts "AM"
-    else
-        puts "PM"
-    end
+# def greetings
+#     return "hello"
+#     puts "hello"
+# end
+
+# greetings
+
+# local, global($), instance(@) &&  class variable(@@)
+name = "Andrew"
+
+def greetings
+  puts
 end
-
-set_time
-
-
-
-
 
 
 
