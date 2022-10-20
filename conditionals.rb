@@ -1,3 +1,12 @@
+=begin
+    conditionals include:
+        -> if 
+        -> if else
+        -> elsif
+        -> case
+
+=end
+
 # pry test
 # require 'pry'
 # def test
@@ -61,6 +70,30 @@
 # else
 #     puts "done cooking"
 # end
+
+
+
+# case statement
+
+dog = "cuddly"
+
+case dog
+when "hungry"
+  owner = "Refilling food bowl."
+when "thirsty"
+  owner = "Refilling water bowl."
+when "playful"
+  owner = "Playing tug-of-war."
+when "cuddly"
+  owner = "Snuggling."
+else
+  owner = "Reading newspaper."
+end
+
+puts owner
+
+
+
 
 
 

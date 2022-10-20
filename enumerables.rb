@@ -38,7 +38,24 @@ books = [
     },
 ]
 
-languages = ["Javascript", "Ruby", "Python", "PHP"]
+
+new_books = books.find do |book|
+    if book[:rating] > 4
+        puts "This is a very nice book"
+    else
+        puts "You can check it out & give your rating"
+    end
+end
+
+
+
+
+
+
+
+
+
+# languages = ["Javascript", "Ruby", "Python", "PHP"]
 
 # puts  books
 # puts books.methods
@@ -61,24 +78,7 @@ languages = ["Javascript", "Ruby", "Python", "PHP"]
 # fullname = puts "Hello #{firstname} #{lastname}"
 
 
-# calculator
-puts "Enter first number: "
-num1 = gets.chomp.to_i
 
-
-puts "Enter second number: "
-num2 = gets.chomp.to_i
-
-answer1 = num1 + num2
-answer2 = num1 - num2
-answer3 = num1 * num2
-answer4 = num1 / num2
-
-
-puts "Answer = #{answer1}"
-puts "Answer = #{answer2}"
-puts "Answer = #{answer2}"
-puts "Answer = #{answer4}"
 
 
 

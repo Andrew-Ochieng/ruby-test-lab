@@ -1,23 +1,26 @@
-# students = [
-#     {
-#         id: 1,
-#         name: "James",
-#         course: "Software"
-#     },
-#     {
-#         id: 2,
-#         name: "Mary",
-#         course: "Networking"
-#     },
-#     {
-#         id: 3,
-#         name: "Kelly",
-#         course: "BBIT"
-#     }
-# ]
+students = [
+    {
+        id: 1,
+        name: "James",
+        course: "Software"
+    },
+    {
+        id: 2,
+        name: "Mary",
+        course: "Networking"
+    },
+    {
+        id: 3,
+        name: "Kelly",
+        course: "BBIT"
+    }
+]
 
 # puts students
 # puts students[1]
+
+
+# resting enumerables
 
 
 
@@ -30,7 +33,7 @@ user = {
   }
 }
 
-puts user[:address][:city]
+# puts user[:address][:city]
 
 # hashes methods
 
@@ -45,5 +48,5 @@ user2 = {
     }
 }
   
-puts user.merge(user2)
+# puts user.merge(user2)
 
