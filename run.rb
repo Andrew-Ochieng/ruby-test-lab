@@ -23,11 +23,6 @@
 
 
 
-
-
-
-
-
 # require 'pry'
 
 # def make_upcase(text)
@@ -40,10 +35,46 @@
 
 # binding.pry
 
-books = [
-    {name: ""}
-]
+quiet_and_loud = ["hi", "HI", "shhh", "WHAT?!"]
 
+# quiet_and_loud.find do |word|
+#     puts word.upcase
+#     # puts upcase
+# end
+  
+
+# quiet_and_loud
+
+
+# odds_and_evens = [2, 3, 2, 18, 5, 10, 24]
+
+
+
+
+quiet_and_loud.find do |word|
+    if word == word.upcase
+        puts word
+    end
+end
+  
+  
+# odds_and_evens.find do |num|
+#     puts num.even?
+#   end
+  
+# puts odds_and_evens.method
+
+# odds_and_evens.filter do |n|
+#     if n.even? == true
+#         puts n
+#     end
+# end
+  
+# odds_and_evens.filter do |n|
+#     if n.odd? == true
+#         puts n
+#     end
+# end
 
 
 

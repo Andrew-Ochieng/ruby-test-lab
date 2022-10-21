@@ -39,19 +39,47 @@ books = [
 ]
 
 
-new_books = books.find do |book|
-    if book[:rating] > 4
-        puts "This is a very nice book"
-    else
-        puts "You can check it out & give your rating"
-    end
-end
 
 
+# require 'pry'
+ 
+# my_books = books.each do |book|
+#     puts book[:title]
+#     binding.pry
+# end
+
+# my_books
 
 
+# puts books.class
+# puts books[0].class
+
+# require 'pry'
+
+# new_books = books.find do |book|
+#     # binding.pry
+#     if book[:rating] >= 4
+#         puts "This is a very nice book"
+#     else
+#         puts "You can check it out & give your rating"
+#     end
+# end
 
 
+# # require 'pry'
+
+# my_books = books.map.with_index do |book, index|
+#     # binding.pry
+#     index = 0
+#     if index < book.length
+#     # binding.pry
+#         index += 1
+#         puts book
+#     end
+
+# end
+
+# puts my_books
 
 
 
