@@ -49,29 +49,60 @@
 # lassie.name
 
 
-require 'pry'
 
-class Recipe
-    attr_reader :name
-    def initialize(name)
-        @name = name
-        # binding.pry
-    end
-    # binding.pry
-    # def name
-    #     @name
-    # end
-end
+# require 'pry'
 
-r1 = Recipe.new("Pilau")
+# class Recipe
+#     # using attribute reader replaces cluttering of methods all over
+#     attr_reader :name 
+#     def initialize(name)
+#         @name = name
+#         # binding.pry
+#     end
+#     # binding.pry
+#     # def name
+#     #     @name
+#     # end
+# end
 
-binding.pry
+# r1 = Recipe.new("Pilau")
 
-
-
-
+# binding.pry
 
 
 
+=begin
+    attr_reader => used to only read attributes
+    attr_accessor => used to read & write/change attributes
+    attr_writer => used to write attributes
+
+=end
 
 
+
+#initialize all together
+# require 'pry'
+
+# class Dog
+#     attr_accessor :name, :price
+
+#     def initialize(name, price)
+#         @name = name
+#         @price = price
+#         binding.pry   
+#     end
+
+#     # def name
+#     #     @name
+#     #     # puts "Wolf!"
+#     # end
+
+#     # def price
+#     #     @price
+#     # end
+# end
+
+
+# doggy = Dog.new("Wolf", 30)
+
+# binding.pry
