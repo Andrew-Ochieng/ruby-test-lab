@@ -1,4 +1,4 @@
-nums = [1, 2, 3, 4, 5]
+# nums = [1, 2, 3, 4, 5]
 
 #array methods
 # puts nums.length
@@ -15,8 +15,18 @@ nums = [1, 2, 3, 4, 5]
 # nums.unshift(-2, -1, 0)
 # puts nums
 
-names = ["Jack", "Mary", "Nelly"]
+names = ["Jack", "Mary", "Nelly", "Jack"]
 
+# new_names = ["Mitch", "John"]
+
+# puts names << new_names
+
+# students = names.each { |name| puts name.length}
+
+# students = names.map { |name| puts name.upcase}
+
+# puts names[0]
+# puts names[1]
 # nums << 10
 # puts nums
 
@@ -35,12 +45,12 @@ names = ["Jack", "Mary", "Nelly"]
 
 # Advanced methods
 #sum
-puts nums.sum
+# puts nums.sum
 
 #filter
 # puts nums.filter((num) => num.indexOf <= 4)
 
-[1, 1, 2, 3, 5].filter((num, index, array) => array.indexOf(num) === index);
+# [1, 1, 2, 3, 5].filter((num, index, array) => array.indexOf(num) === index);
 
 
 

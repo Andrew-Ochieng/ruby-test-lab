@@ -23,26 +23,84 @@
 
 
 
+# require 'pry'
+
+# class Dog
+
+#     attr_accessor :name
+  
+#     def initialize(name)
+#       @name = name
+#     end
+  
+#     def bark
+#       "Woof!"
+#     end
+      
+# end
+  
+# fido = Dog.new("Fido")
+
+
+# binding.pry
+
 require 'pry'
 
-class Dog
+class Person
+    def initialize(name, age, nationalities)
+        @name = name
+        @age = age
+        @nationalities = []
+    end
 
-    attr_accessor :name
-  
-    def initialize(name)
-      @name = name
+    def show_nationalities
+        self.show_details
+        puts "From: #{nationalities}"
+        
     end
-  
-    def bark
-      "Woof!"
+    # binding.pry
+
+    def show_details
+        puts "My name is #{@name} & I am #{@age} old"
     end
-      
 end
-  
-fido = Dog.new("Fido")
+
+
+# instance variable
+john = Person.new("John", 30, ["USA", "Kenya", "Syngapore"])
 
 
 binding.pry
+
+
+
+# require 'pry'
+
+# class Dog
+#     attr_accessor :name, :owner
+  
+#     def initialize(name)
+#       @name = name
+#     end
+  
+#     def bark
+#       "Woof!"
+#     end
+  
+#     def get_adopted(owner_name)
+#       self.owner = owner_name
+#     end
+  
+#   end
+  
+# binding.pry
+
+# fido = Dog.new("Fido")
+# fido.get_adopted("Sophie")
+# fido.owner
+
+
+
 
 
 

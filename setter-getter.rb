@@ -78,11 +78,13 @@
 require 'pry'
 
 class Person
+    #setter method - replace with attr_writer
     def name=(name)
         @name = name
 
     end
 
+    #getter method replace with attr_reader
     def name
         @name
     end
@@ -90,7 +92,7 @@ end
 
 bobby = Person.new
 bobby.name = 'bobby'
-puts bobby.name
+# puts bobby.name
 
 
 

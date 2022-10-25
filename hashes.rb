@@ -50,3 +50,67 @@ user2 = {
   
 # puts user.merge(user2)
 
+
+# puts "Enter your age"
+# result = gets.chomp.to_i
+
+# puts "Enter your email address"
+# email = gets.chomp
+
+# email = "andrewomosh44@gmail.com"
+
+# puts "Enter your password"
+# password = gets.chomp
+
+# puts email.length
+# puts email.indexOf("@")
+
+
+# while result.class != Integer
+#     puts "Enter your age again"
+# end
+
+# puts result.class
+
+
+
+cars = [
+    {
+        name: "Ferrari",
+        color: "red",
+        year: "2016",
+        speed: "fast"
+    },
+    {
+        name: "Maserati",
+        color: "black",
+        year: "2015",
+        speed: "fast"
+    },
+    {
+        name: "Bugatti",
+        color: "green",
+        year: "2019",
+        speed: "fast"
+    },
+    {
+        name: "Nissan",
+        color: "red",
+        year: "2017",
+        speed: "comfortable"
+    }
+]
+
+
+fast_cars = cars.filter {
+    |car| car[:speed] == "fast" 
+    # puts fast_cars
+}
+
+
+puts fast_cars
+
+
+
+
+
