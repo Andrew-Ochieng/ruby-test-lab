@@ -75,4 +75,24 @@
 # binding.pry
 
 
+require 'pry'
 
+class Person
+    def name=(name)
+        @name = name
+
+    end
+
+    def name
+        @name
+    end
+end
+
+bobby = Person.new
+bobby.name = 'bobby'
+puts bobby.name
+
+
+
+
+binding.pry
