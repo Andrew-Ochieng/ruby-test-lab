@@ -1,4 +1,13 @@
-# nums = [1, 2, 3, 4, 5]
+# require 'pry'
+
+# nums = [9, 3, 0, 3, 1, 2, 3, 4, 5]
+
+# new_num = nums.sort { |a, b| a  <=> b }
+
+# puts new_num
+
+# binding.pry
+
 
 #array methods
 # puts nums.length
@@ -15,7 +24,19 @@
 # nums.unshift(-2, -1, 0)
 # puts nums
 
+require 'pry'
+
 names = ["Jack", "Mary", "Nelly", "Jack"]
+
+new_names = ["Nelly", "Linah"]
+
+join_names = names << new_names
+
+
+binding.pry
+
+
+
 
 # new_names = ["Mitch", "John"]
 

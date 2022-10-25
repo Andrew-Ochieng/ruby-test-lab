@@ -1,3 +1,5 @@
+require 'pry'
+
 students = [
     {
         id: 1,
@@ -12,42 +14,35 @@ students = [
     {
         id: 3,
         name: "Kelly",
-        course: "BBIT"
+        course: "Software"
     }
 ]
 
-# puts students
-# puts students[1]
+# sort name in ascending order
+sort_name = students.sort! { |a, b| a[:name] <=> b[:name]}
 
 
-# resting enumerables
+# filter by course - returns elements that are true to callback function
+# software_students = students.filter do |student|
+#         student[:course] == "Software"
+#     end
+
+# puts software_students
 
 
+# software_students = students.filter { |student| student[:course] == "Software" }]
 
-user = {
-  name: "Duane",
-  address: {
-    street: "123 Fake Street",
-    city: "Queens",
-    state: "NY"
-  }
-}
+# students.each do |student|
+#     puts student[:id]
+# end
 
-# puts user[:address][:city]
 
-# hashes methods
+binding.pry
 
-# puts user.keys
-# puts user.values
-user2 = {
-    name: "Jake",
-    address: {
-        street: "123 Santa Street",
-        city: "San Francisco",
-        state: "CA"
-    }
-}
   
+
+
+
 # puts user.merge(user2)
 
 
@@ -102,15 +97,24 @@ cars = [
 ]
 
 
-fast_cars = cars.filter {
-    |car| car[:speed] == "fast" 
-    # puts fast_cars
-}
+# fast_cars = cars.filter {
+#     |car| car[:speed] == "fast" 
+#     # puts fast_cars
+# }
 
 
-puts fast_cars
+# puts fast_cars
 
 
+
+
+let cities = [
+    {name: 'Los Angeles', population: 3792621},
+    {name: 'New York', population: 8175133},
+    {name: 'Chicago', population: 2695598},
+    {name: 'Houston', population: 2099451},
+    {name: 'Philadelphia', population: 1526006}
+];
 
 
 
