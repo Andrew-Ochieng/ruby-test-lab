@@ -75,7 +75,7 @@
 
 # case statement
 
-require 'pry'
+# require 'pry'
 
 # dog = "cuddly"
 
@@ -94,30 +94,38 @@ require 'pry'
 
 # puts owner
 
-
-puts "Enter your age here..."
-
-age = gets.chomp.to_i
-
-case age
-when 0
-  puts "Your age cannot be 0."
-
-when 1..6
-  puts "You are a baby."
-when 7..12
-  puts "You are a teenager"
-when 13..20
-  puts "You are an adolescent."
-when 21..35
-  puts "You are a young adult."
-else 
-  puts "You now a fully grown adult."
-
-end
+# binding.pry
 
 
-binding.pry
+
+
+
+
+# require 'pry'
+
+# puts "Enter your age here..."
+
+# age = gets.chomp.to_i
+
+# case age
+# when 0
+#   puts "Your age cannot be 0."
+
+# when 1..6
+#   puts "You are a baby."
+# when 7..12
+#   puts "You are a teenager"
+# when 13..20
+#   puts "You are an adolescent."
+# when 21..35
+#   puts "You are a young adult."
+# else 
+#   puts "You now a fully grown adult."
+
+# end
+
+
+# binding.pry
 
 
 
