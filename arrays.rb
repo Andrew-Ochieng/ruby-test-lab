@@ -1,12 +1,14 @@
-# require 'pry'
+require 'pry'
 
-# nums = [9, 3, 0, 3, 1, 2, 3, 4, 5]
+nums = [9, 3, 0, 3, 1, 2, 3, 4, 5]
+
+nums.max
 
 # new_num = nums.sort { |a, b| a  <=> b }
 
 # puts new_num
 
-# binding.pry
+binding.pry
 
 
 #array methods
