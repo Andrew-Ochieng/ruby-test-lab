@@ -50,14 +50,25 @@ class Person
     def initialize(name, age, nationalities)
         @name = name
         @age = age
-        @nationalities = []
+        @nationalities = nationalities
     end
 
     def show_nationalities
         self.show_details
-        puts "From: #{nationalities}"
+        puts "From: #{@nationalities}"
         
     end
+
+    #setter
+    def nationalities=(nationalities)
+        @nationalities = nationalities
+    end
+
+    #getter
+    def nationalities
+        @nationalities
+    end
+
     # binding.pry
 
     def show_details

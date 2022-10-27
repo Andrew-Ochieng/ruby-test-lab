@@ -1,14 +1,14 @@
-require 'pry'
+# require 'pry'
 
-nums = [9, 3, 0, 3, 1, 2, 3, 4, 5]
+# nums = [9, 3, 0, 3, 1, 2, 3, 4, 5]
 
-nums.max
+# nums.max
 
-# new_num = nums.sort { |a, b| a  <=> b }
+# # new_num = nums.sort { |a, b| a  <=> b }
 
-# puts new_num
+# # puts new_num
 
-binding.pry
+# binding.pry
 
 
 #array methods
@@ -28,11 +28,16 @@ binding.pry
 
 require 'pry'
 
-names = ["Jack", "Mary", "Nelly", "Jack"]
+names = ["Jack", "Mary", "Nelly", "Jack",  "Andy", "Angel"]
 
-new_names = ["Nelly", "Linah"]
+# filter using the first word
+filter_names = names.filter { |name| name[0] == "J" }
 
-join_names = names << new_names
+sort_names = names.sort 
+
+
+# new_names = ["Nelly", "Linah"]
+# join_names = names << new_names
 
 
 binding.pry
