@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 
 students = [
     {
@@ -19,7 +19,7 @@ students = [
 ]
 
 # sort name in ascending order
-sort_name = students.sort! { |a, b| a[:name] <=> b[:name]}
+# sort_name = students.sort! { |a, b| a[:name] <=> b[:name]}
 
 
 # filter by course - returns elements that are true to callback function
@@ -37,7 +37,7 @@ sort_name = students.sort! { |a, b| a[:name] <=> b[:name]}
 # end
 
 
-binding.pry
+# binding.pry
 
   
 
@@ -116,5 +116,27 @@ let cities = [
     {name: 'Philadelphia', population: 1526006}
 ];
 
+
+
+
+
+
+require 'pry'
+
+marks = {"Ramesh":23, "Vivek":40, "Harsh":88, "Mohammad":60}
+
+marks.group_by do |pass| 
+    marks[:value] > 30
+
+end
+
+
+
+
+
+
+
+
+binding.pry
 
 

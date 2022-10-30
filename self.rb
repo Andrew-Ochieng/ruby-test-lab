@@ -47,41 +47,72 @@
 require 'pry'
 
 class Person
+    attr_accessor :name, :age, :nationalities
+    #class varriable
+    @@nationality = []
+    # @@count = 0
+
     def initialize(name, age, nationalities)
         @name = name
         @age = age
         @nationalities = nationalities
+        @@nationality << nationalities
+        # @@count += 1
     end
 
-    def show_nationalities
-        self.show_details
-        puts "From: #{@nationalities}"
+    #class method
+    def self.show_nationalities
+        @@nationality.each do |national| 
+            puts "#{national}"
+        end
+    end
+
+    # def self.counter
+    #     @@count 
+    # end
+
+
+
+
+
+    # def show_nationalities
+    #     self.show_details
+    #     puts "From: #{@nationalities}"
         
-    end
+    # end
 
-    #setter
-    def nationalities=(nationalities)
-        @nationalities = nationalities
-    end
+    # def show_details
+    #     puts "My name is #{@name} & I am #{@age} old"
+    # end
 
-    #getter
-    def nationalities
-        @nationalities
-    end
+    # #setter
+    # def nationalities=(nationalities)
+    #     @nationalities = nationalities
+    # end
+
+    # #getter
+    # def nationalities
+    #     @nationalities
+    # end
 
     # binding.pry
 
-    def show_details
-        puts "My name is #{@name} & I am #{@age} old"
-    end
+    
 end
 
-
 # instance variable
-john = Person.new("John", 30, ["USA", "Kenya", "Syngapore"])
-
+my_nationality = Person.new("John", 30, ["USA", "Kenya", "Syngapore"])
+Person.show_nationalities
 
 binding.pry
+
+
+
+# get_count = Person.new(2)
+# puts Person.counter
+
+
+# binding.pry
 
 
 
