@@ -77,24 +77,41 @@
 
 require 'pry'
 
-class Person
-    #setter method - replace with attr_writer
+# class Person
+#     #setter method - replace with attr_writer
+#     def name=(name)
+#         @name = name
+
+#     end
+
+#     #getter method replace with attr_reader
+#     def name
+#         @name
+#     end
+# end
+
+# bobby = Person.new
+# bobby.name = 'bobby'
+# # puts bobby.name
+
+
+class Pet
+    def initialize(name)
+      @name = name
+    end
+  
     def name=(name)
-        @name = name
-
+      @name = name
     end
-
-    #getter method replace with attr_reader
+  
     def name
-        @name
+      @name
     end
-end
-
-bobby = Person.new
-bobby.name = 'bobby'
-# puts bobby.name
-
-
+  end
+  
+  rabbit = Pet.new("Jabby")
+  rabbit.name = "Chokola"
+  
 
 
 binding.pry
